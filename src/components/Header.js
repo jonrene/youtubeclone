@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 
 export default function Header(){
+
   useEffect(()=>{
     let input = document.getElementsByClassName("input")[0];
 
@@ -10,7 +11,7 @@ export default function Header(){
       e.preventDefault();
       document.getElementsByClassName("form")[0].className = "form form-has-focus";
       document.getElementsByClassName("hidden-search-img")[0].style.display = "block";
-      document.getElementsByClassName("middle-container")[0].style.width = "600px";
+      document.getElementsByClassName("middle-container")[0].style.width = "700px";
     })
 
 
@@ -18,10 +19,30 @@ export default function Header(){
       e.preventDefault();
       document.getElementsByClassName("form")[0].className = "form";
       document.getElementsByClassName("hidden-search-img")[0].style.display = "none";
-      document.getElementsByClassName("middle-container")[0].style.width = "560px";
+      document.getElementsByClassName("middle-container")[0].style.width = "650px";
     })
 
   }, [])
+
+  function onInput(e){
+    e.preventDefault();
+    if(e.target.value === ""){
+      console.log("clear")
+      document.getElementsByClassName("clear-button")[0].style.display = 'none';
+    }else{
+      console.log("query")
+      document.getElementsByClassName("clear-button")[0].style.display = 'block';
+    }
+  }
+
+  function clearSearch(){
+    document.getElementsByClassName("input")[0].value = "";
+    document.getElementsByClassName("clear-button")[0].style.display = 'none';
+    document.getElementsByClassName("input")[0].focus();
+    
+  }
+
+
   
   return(
     <header>
@@ -47,8 +68,12 @@ export default function Header(){
               type="search"
               placeholder="Search"
               autoComplete="off"
+              onInput={onInput}
             />
           </form>
+          <button className="clear-button" onClick={clearSearch}>
+              <img className="clear-button-image"src="./images/close-button.png" alt="clear"></img>
+            </button>
           <button className="search-button">
             <img
               className="search-button-img"
