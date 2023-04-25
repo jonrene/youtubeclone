@@ -68,8 +68,7 @@ body{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border-style: solid;
-    border-color: blue;
-    /* border-color:#d3d3d3; */
+    border-color:#d3d3d3;
     border-width: 1px 0.5px 1px 1px;
     border-right-width: 0.5px;
     height: 40px;
@@ -120,7 +119,7 @@ input[type="search"]:focus {
     border-style: none;
     border-radius: 20px;
     cursor: pointer;
-    background-image: url('../images/profile.jpg');
+    background-image: url('../images/header/profile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -160,6 +159,7 @@ input[type="search"]:focus {
     height: 40px;
     width: 80px;
     padding: 0;
+    margin-left: 10px;
     border: none;
     cursor: pointer;
     background-color: white;
@@ -167,7 +167,7 @@ input[type="search"]:focus {
 }
 
 .menu-button:hover{
-    background-color: rgb(230, 227, 240);
+    background-color: rgb(235, 231, 231);
 }
 
 .search-button{
@@ -207,7 +207,8 @@ input[type="search"]:focus {
     background-color: rgb(235, 231, 231);
 }
 
-.voice-search-button:active{
+.voice-search-button:active,
+.menu-button:active{
     background-color: rgb(198, 194, 194);
 }
 

@@ -27,10 +27,8 @@ export default function Header(){
   function onInput(e){
     e.preventDefault();
     if(e.target.value === ""){
-      console.log("clear")
       document.getElementsByClassName("clear-button")[0].style.display = 'none';
     }else{
-      console.log("query")
       document.getElementsByClassName("clear-button")[0].style.display = 'block';
     }
   }
@@ -41,17 +39,30 @@ export default function Header(){
     document.getElementsByClassName("input")[0].focus();
     
   }
-
-
   
+  function menuClick(e){
+    e.preventDefault();
+    let menu = document.getElementsByClassName('menu')[0];
+    let smallMenu = document.getElementsByClassName('small-menu')[0];
+
+    if(menu.style.display === 'flex'){
+      menu.style.display = 'none';
+      smallMenu.style.display = 'flex';
+    }else{
+      menu.style.display = 'flex';
+      smallMenu.style.display = 'none';
+    }
+  }
+
+
   return(
     <header>
       <div className="left-section">
-        <button className="menu-button">
-          <img className="menu-button-img" src="./images/hamburgerMenu.png" alt="menu" />
+        <button className="menu-button" onClick={menuClick}>
+          <img className="menu-button-img" src="./images/header/hamburgerMenu.png" alt="menu" />
         </button>
         <button className="home-button">
-          <img className="home-button-img" src="./images/youtubeHome.png" alt="Home"/>
+          <img className="home-button-img" src="./images/header/youtubeHome.png" alt="Home"/>
           <div className="tool-tip">Youtube Home</div>
         </button>
       </div>
@@ -60,7 +71,7 @@ export default function Header(){
           <form className="form">
             <img
               className="hidden-search-img"
-              src="./images/search.png"
+              src="./images/header/search.png"
               alt="search"
             />
             <input
@@ -72,29 +83,29 @@ export default function Header(){
             />
           </form>
           <button className="clear-button" onClick={clearSearch}>
-              <img className="clear-button-image"src="./images/close-button.png" alt="clear"></img>
+              <img className="clear-button-image"src="./images/header/close-button.png" alt="clear"></img>
             </button>
           <button className="search-button">
             <img
               className="search-button-img"
-              src="./images/search.png"
+              src="./images/header/search.png"
               alt="search"
             />
             <div className="tool-tip">Search</div>
           </button>
           <button className="voice-search-button">
-            <img className="voice-search-button-img" src="./images/mic.png" alt="Voice Search" />
+            <img className="voice-search-button-img" src="./images/header/mic.png" alt="Voice Search" />
             <div className="tool-tip">Search with your voice</div>
           </button>
         </div>
       </div>
       <div className="right-section">
         <button className="upload-button">
-          <img className="upload-img" src="./images/video-add.png" alt="upload"/>
+          <img className="upload-img" src="./images/header/video-add.png" alt="upload"/>
           <div className="tool-tip">Create</div>
         </button>
         <button className="notification-button">
-          <img className="notification-img" src="./images/bell.png" alt="notifications" />
+          <img className="notification-img" src="./images/header/bell.png" alt="notifications" />
           <div className="tool-tip">Notifications</div>
           <div className="notification-number">7</div>
         </button>
