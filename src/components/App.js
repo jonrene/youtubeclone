@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from './Header.js';
 import Menu from './Menu.js';
 import SmallMenu from './SmallMenu';
+import VideoGrid from './VideoGrid';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Header/>
       <Menu/>
       <SmallMenu/>
+      <VideoGrid/>
     </>
   )
 }

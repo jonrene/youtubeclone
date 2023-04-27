@@ -10,7 +10,9 @@
     top: 56px;
     width: 225px;
     overflow: hidden;
+    padding-top: 10px;
     padding-right: 15px;
+    z-index: 1;
 }
 
 .menu:hover{

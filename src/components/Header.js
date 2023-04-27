@@ -44,13 +44,21 @@ export default function Header(){
     e.preventDefault();
     let menu = document.getElementsByClassName('menu')[0];
     let smallMenu = document.getElementsByClassName('small-menu')[0];
+    let grid = document.getElementsByClassName('video-grid')[0];
+    let body = document.getElementsByTagName('body')[0];
 
     if(menu.style.display === 'flex'){
+      grid.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
+      body.style.paddingLeft = "100px";
+      body.style.paddingRight = "40px";
       menu.style.display = 'none';
       smallMenu.style.display = 'flex';
     }else{
       menu.style.display = 'flex';
       smallMenu.style.display = 'none';
+      grid.style.gridTemplateColumns = "1fr 1fr 1fr";
+      body.style.paddingLeft = "335px";
+      body.style.paddingRight = "100px";
     }
   }
 

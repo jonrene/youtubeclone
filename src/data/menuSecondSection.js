@@ -17,7 +17,7 @@ const secondSectionData = [
     {
         imgSrc: "./images/menu/later.svg",
         alt: "Watch Later",
-        description: "Home"
+        description: "Watch Later"
     },
     {
         imgSrc: "./images/menu/like.svg",

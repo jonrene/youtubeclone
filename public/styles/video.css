@@ -1,0 +1,84 @@
+/* video grid styilings*/
+
+.video-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 0;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+
+
+
+/* video styilings*/
+.video{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.video:active{
+    background-color: rgb(235, 231, 231);
+}
+
+.video-details{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 0px;
+    height: 105px;
+
+}
+
+.video-info{
+    height: 105px;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+
+
+}
+
+
+.thumbnail{
+    width: 100%;
+    display: block;
+    border-radius: 13px;
+}
+
+
+
+.channel-image{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.channel-image-container{
+    display: inline-block;
+}
+
+.video-title,
+.channel-name,
+.views-time{
+    text-align: left;
+}
+
+.video-title{
+    margin: 11px 0px 0px 0px;
+}
+
+.channel-name{
+    margin: 11px 0px 0px 0px;
+}
+
+.views-time{
+    margin: 3px 0px 0px 0px;
+}
+
+.verified{
+    width: 10px;
+    margin-left: 3px;
+}

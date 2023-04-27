@@ -1,6 +1,6 @@
 .small-menu{
     justify-content: center;
-    /* display: none; */
+    display: none;
     flex-direction: column;
     background-color: white;
     position: fixed;
@@ -11,7 +11,8 @@
     width: 64px;
     overflow: hidden;
     margin-left: 0px;
-    padding-left: 4px
+    padding-left: 4px;
+    z-index: 1;
 }
 
 .small-menu-nav-button{
@@ -31,6 +32,10 @@
     background-color: rgb(235, 231, 231);
 }
 
+.small-menu-nav-button:active{
+    background-color: rgb(198, 194, 194);
+}
+
 .small-menu-nav-button-img{
     width: 25px;
     margin-left: 5px;
@@ -46,7 +51,7 @@
 }
 
 .small-active-menu-button{
-    background-color: rgb(198, 194, 194);
+    background-color: rgb(235, 231, 231);
 }
 
 

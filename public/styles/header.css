@@ -11,22 +11,12 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
-}
-
-body{
-    margin: 0;
-    padding-top: 80px;
-    padding-left: 96px;
-    padding-right: 24px;
-    padding-bottom: 2000px;
+    z-index: 2;
     background-color: white;
 }
 
-
-
 .left-section{
-    margin-left: 13px;
+    margin-left: 13px; 
     display: flex;
     justify-content:flex-start;
     align-items: center;
