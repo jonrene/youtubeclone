@@ -18,6 +18,7 @@
     background-color: white;
     cursor: pointer;
     border: none;
+    border-radius: 5px;
 }
 
 .video:active{
@@ -71,14 +72,17 @@
 }
 
 .channel-name{
+    color: #606060;
     margin: 11px 0px 0px 0px;
 }
 
 .views-time{
     margin: 3px 0px 0px 0px;
+    color: #606060
 }
 
 .verified{
     width: 10px;
     margin-left: 3px;
 }
+

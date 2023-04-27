@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Video({thumbnail, channelImage, videoTitle, channelName, videoViewsTime}){
+export default function Video({thumbnail, channelImage, videoTitle, channelName, views, date}){
     return(
         <>
             <button className="video">
@@ -12,7 +12,7 @@ export default function Video({thumbnail, channelImage, videoTitle, channelName,
                         <p className="channel-name">{channelName}
                             <img className="verified" src="./images/profiles/verified.jpeg" alt="verified"></img>
                         </p>
-                        <p className="views-time">{videoViewsTime}</p>
+                        <p className="views-time">{views} <strong>{String.fromCharCode(183)}</strong> {date}</p>
                     </div>
                 </div>
             </button>

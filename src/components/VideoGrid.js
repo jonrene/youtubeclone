@@ -1,28 +1,57 @@
 import React from "react";
-import Video from "./Video";
+import Video from "./Video.js";
+import videoData from "../data/videoData.js";
 
 export default function VideoGrid(){
-
-    let videoList = [];
-
-    for(let i=0; i < 15; i++){
-        videoList.push(
-        <Video 
-            key={i} thumbnail="./images/thumbnails/nutshell.webp" 
-            channelImage={"./images/profiles/nutshell.jpeg"}
-            videoTitle="The Fermi Paradox - Where Are All The Aliens? (1/2)"
-            channelName={"Kurzgesagt – In a Nutshell"}
-            videoViewsTime={"32M views " + String.fromCharCode(183) + " 7 years ago"}
-        >
-
-        </Video>
-        )
-    }
+    console.log(videoData);
 
     return(
         <>
             <div className="video-grid">
-                {videoList}
+                {videoData.map((video, index)=>{
+                    return(
+                            <Video 
+                                key={index}
+                                thumbnail={video.thumbnail}
+                                channelImage={video.channelImage}
+                                videoTitle={video.videoTitle}
+                                channelName={video.channelName}
+                                views={video.views}
+                                date={video.date}
+                                >
+                            </Video>
+                        )
+                })}
+
+                {videoData.map((video, index)=>{
+                    return(
+                            <Video 
+                                key={index}
+                                thumbnail={video.thumbnail}
+                                channelImage={video.channelImage}
+                                videoTitle={video.videoTitle}
+                                channelName={video.channelName}
+                                views={video.views}
+                                date={video.date}
+                                >
+                            </Video>
+                        )
+                })}
+
+                {videoData.map((video, index)=>{
+                    return(
+                            <Video 
+                                key={index}
+                                thumbnail={video.thumbnail}
+                                channelImage={video.channelImage}
+                                videoTitle={video.videoTitle}
+                                channelName={video.channelName}
+                                views={video.views}
+                                date={video.date}
+                                >
+                            </Video>
+                        )
+                })}
             </div>
         </>
     )
