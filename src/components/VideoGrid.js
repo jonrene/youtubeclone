@@ -3,8 +3,6 @@ import Video from "./Video.js";
 import videoData from "../data/videoData.js";
 
 export default function VideoGrid(){
-    console.log(videoData);
-
     return(
         <>
             <div className="video-grid">
@@ -18,6 +16,7 @@ export default function VideoGrid(){
                                 channelName={video.channelName}
                                 views={video.views}
                                 date={video.date}
+                                length={video.length}
                                 >
                             </Video>
                         )
@@ -33,6 +32,7 @@ export default function VideoGrid(){
                                 channelName={video.channelName}
                                 views={video.views}
                                 date={video.date}
+                                length={video.length}
                                 >
                             </Video>
                         )
@@ -48,6 +48,7 @@ export default function VideoGrid(){
                                 channelName={video.channelName}
                                 views={video.views}
                                 date={video.date}
+                                length={video.length}
                                 >
                             </Video>
                         )

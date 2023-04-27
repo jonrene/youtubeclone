@@ -47,9 +47,10 @@ export default function Header(){
     let grid = document.getElementsByClassName('video-grid')[0];
     let body = document.getElementsByTagName('body')[0];
 
+
     if(menu.style.display === 'flex'){
       grid.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
-      body.style.paddingLeft = "100px";
+      body.style.paddingLeft = "90px";
       body.style.paddingRight = "40px";
       menu.style.display = 'none';
       smallMenu.style.display = 'flex';

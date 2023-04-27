@@ -5,7 +5,8 @@ let videoData = [
         videoTitle: "The Fermi Paradox - Where Are All The Aliens? (1/2)",
         channelName: "Kurzgesagt – In a Nutshell",
         views: "32M views",
-        date: "7 years ago"
+        date: "7 years ago",
+        length: "6:21"
     },
     {
         thumbnail: "./images/thumbnails/beast.webp",
@@ -13,7 +14,8 @@ let videoData = [
         videoTitle: "$1 vs $500,000 Plane Ticket!",
         channelName: "MrBeast",
         views: "135M views",
-        date: "3 weeks ago"
+        date: "3 weeks ago",
+        length: "12:20"
     },
     {
         thumbnail: "./images/thumbnails/markiplier.webp",
@@ -21,7 +23,8 @@ let videoData = [
         videoTitle: "Try Not To Laugh Challenge",
         channelName: "Markiplier",
         views: "41M views",
-        date: "6 years ago"
+        date: "6 years ago",
+        length: "7:45"
     },
     {
         thumbnail: "./images/thumbnails/mkbhd.webp",
@@ -29,7 +32,8 @@ let videoData = [
         videoTitle: "I Made My Own Sneaker! M251",
         channelName: "Marques Brownlee",
         views: "1M views",
-        date: "1 day ago"
+        date: "1 day ago",
+        length: "7:02"
     },
     {
         thumbnail: "./images/thumbnails/vsauce.webp",
@@ -37,7 +41,8 @@ let videoData = [
         videoTitle: "Is Earth Actually Flat?",
         channelName: "Vsauce",
         views: "34M views",
-        date: "8 years ago"
+        date: "8 years ago",
+        length: "10:31"
     },
     {
         thumbnail: "./images/thumbnails/philip.webp",
@@ -45,7 +50,8 @@ let videoData = [
         videoTitle: "WOW... We Need To Talk About This...",
         channelName: "Philip DeFranco",
         views: "6M views",
-        date: "6 years ago"
+        date: "6 years ago",
+        length: "13:45"
     }
     
 

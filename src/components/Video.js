@@ -1,10 +1,13 @@
 import React from "react";
 
-export default function Video({thumbnail, channelImage, videoTitle, channelName, views, date}){
+export default function Video({thumbnail, channelImage, videoTitle, channelName, views, date, length}){
     return(
         <>
             <button className="video">
-                <img className="thumbnail" src={thumbnail} alt="thumbnail"></img>
+                <div className="thumbnail-container">
+                    <div className="video-length">{length}</div>
+                    <img className="thumbnail" src={thumbnail} alt="thumbnail"></img>
+                </div>
                 <div className="video-details">
                     <img className="channel-image"src={channelImage} alt="channel"></img>
                     <div className="video-info">
