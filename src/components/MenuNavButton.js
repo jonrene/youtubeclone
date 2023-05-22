@@ -17,7 +17,7 @@ export default function MenuNavButton({imgSrc, alt, description}){
     return(
         <>
             <button className="menu-nav-button" onClick={changeClass}>
-                <img className="menu-nav-button-img" src={imgSrc} atl={alt}></img>
+                <img className="menu-nav-button-img" src={imgSrc} alt={alt}></img>
                 <p className="menu-button-desc">{description}</p>
             </button>
         </>

@@ -17,7 +17,7 @@ export default function SmallMenuNavButton({imgSrc, alt, description}){
     return(
         <>
             <button className="small-menu-nav-button" onClick={changeClass}>
-                <img className="small-menu-nav-button-img" src={imgSrc} atl={alt}></img>
+                <img className="small-menu-nav-button-img" src={imgSrc} alt={alt}></img>
                 <p className="small-menu-button-desc">{description}</p>
             </button>
         </>
