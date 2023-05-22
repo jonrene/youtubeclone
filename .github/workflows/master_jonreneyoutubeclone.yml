@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'jonreneyoutubeclone'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B52CC0D5530F477EB5E59D14ABCECF53 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A44B121DC9247BEA35EB107D015728E }}
           package: .
