@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c1d8bc94-cf9e-4eb1-bfa0-d876bc0f565f/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/jonreneyoutubeclone",
+    "appService.deploySubpath": "."
+}
