@@ -49,15 +49,18 @@ export default function Header(){
 
 
     if(menu.style.display === 'flex'){
-      grid.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
       body.style.paddingLeft = "90px";
       body.style.paddingRight = "40px";
       menu.style.display = 'none';
       smallMenu.style.display = 'flex';
+
+      console.log(grid.style.gridTemplateColumns, "im here");
+
+      if(window.innerWidth >= 830){
+      }
     }else{
       menu.style.display = 'flex';
       smallMenu.style.display = 'none';
-      grid.style.gridTemplateColumns = "1fr 1fr 1fr";
       body.style.paddingLeft = "335px";
       body.style.paddingRight = "100px";
     }
