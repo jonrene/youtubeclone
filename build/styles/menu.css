@@ -1,0 +1,84 @@
+.menu{
+    align-items: stretch;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 56px;
+    width: 225px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 15px;
+    z-index: 1;
+}
+
+.menu:hover{
+    overflow-y: scroll;
+}
+
+.menu-nav-button{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.menu-nav-button * {
+    pointer-events: none;
+}
+
+.menu-nav-button:hover {
+    background-color: rgb(235, 231, 231);
+}
+
+.menu-nav-button:active {
+    background-color: rgb(198, 194, 194);
+}
+
+.menu-nav-button-img{
+    width: 25px;
+    margin-left: 5px;
+}
+
+.menu-button-desc{
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 500;
+}
+
+.menu-section-divider{
+    position: relative;
+    border-bottom: 0.5 solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-section-divider::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 5%;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(235, 231, 231);
+    
+}
+
+.menu-section-header{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.active-menu-button{
+    background-color: rgb(235, 231, 231) ;
+}
